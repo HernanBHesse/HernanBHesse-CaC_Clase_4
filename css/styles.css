@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+body {
+  background-image: url("/assets/img/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  width: 100vw;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 5px 2vw 0 0;
+  height: 8vh;
+  width: 100vw;
+  background-color: #ffffffab;
+  box-shadow: 3px 3px 5px 0px #0000004d;
+}
+
+.navBar h2,
+.footer h2 {
+  display: none;
+}
+
+a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  padding: 5px;
+  margin: 0 10px;
+  border-bottom: 3px solid #000000;
+}
+
+li:hover {
+  padding: 10px 5px 5px 5px;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  background-color: #ffffff;
+  border-bottom: none;
+  border-radius: 0 0 5% 5%;
+  box-shadow: 5px 5px 5px 0px #00000088;
+}
+
+h2 {
+  margin: 0 auto 5vh auto;
+  padding: 5px 10px;
+  width: min-content;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 5px 0px #0000004d;
+}
+
+.audios,
+.videos {
+  padding: 20px;
+  margin-top: 1vh;
+  width: 90vw;
+  text-align: center;
+  background-color: #ffffffab;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 5px 0px #0000004d;
+}
+
+.audios div,
+.videos div {
+  display: flex;
+  justify-content: space-evenly;
+  height: min-content;
+}
+
+.footer {
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  height: max-content;
+  width: 100vw;
+  margin-top: 2vh;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
